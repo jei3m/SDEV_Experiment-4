@@ -6,12 +6,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 .about-wrapper{
     height: 100vh;
 }
+
 .about-left{
     background-color: #21D4FD;
     display: flex;
@@ -21,7 +24,6 @@ body{
     height: 100vh;
     color:#fff
 }
-
 
 .about-left-content > div{
     background: #0f1f30;
@@ -34,6 +36,7 @@ body{
     display: block;
     width: 200px;
 }
+
 .about-img{
     width: 200px;
     height: 200px;
@@ -41,6 +44,7 @@ body{
     border-radius: 10%;
     transition: all 0.5s ease-in-out;
 }
+
 .shadow{
     margin-left: auto;
     margin-right: auto;
@@ -49,8 +53,6 @@ body{
     height: 200px;
 }
 
-
-
 .about-left-content h2{
     font-size: 2rem;
     margin: 2.2rem 0 0.6rem 0;
@@ -58,12 +60,14 @@ body{
     padding-bottom: 1rem;
     border-bottom: 2px solid #21b9ff;
 }
+
 .about-left-content h3{
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 5px;
     margin-top: 1.4rem;
 }
+
 .icons{
     background: #12192c;
     display: flex;
@@ -71,6 +75,7 @@ body{
     padding: 0.8rem 0;
     border-radius: 0 0 12px 12px;
 }
+
 .icons li{
     list-style-type: none;
     background: #21b9ff;
@@ -86,10 +91,12 @@ body{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
+
 .icons li:hover{
     background: #edffec;
     color: #000;
 }
+
 .about-right{
     background: #12192c;
     height: 100vh;
@@ -101,6 +108,7 @@ body{
     text-align: center;
     color:#fff
 }
+
 .about-right h1{
     font-size: 5rem;
     text-transform: uppercase;
@@ -108,38 +116,44 @@ body{
 .about-right h1 span{
     color: #21b9ff;
 }
+
 .about-right h2{
     font-weight: 600;
 }
+
 .about-btns{
     display: flex;
     margin: 2rem 0;
 }
+
 .btn{
     border: none;
     font-size: 0.9rem;
     text-transform: uppercase;
     border: 2px solid #fff;
     border-radius: 20px;
-    padding: 0.55rem 0;
-    width: 130px;
+    padding: 1rem 0;
+    width: 170px;
     font-weight: 600;
     background: transparent;
     margin: 0 0.5rem;
     cursor: pointer;
     color:#fff
 }
+
 .btn.btn-pink{
     background: #16b7db;
     color: #fff;
     border-color: #21D4FD;
     transition: all 0.5s ease-in-out;
 }
+
 .btn.btn-pink:hover{
     background: transparent;
     border-color: #fff;
     color: #fff;
 }
+
 .btn.btn-white{
     transition: all 0.5s ease-in-out;
 }
@@ -177,11 +191,6 @@ body{
     font-weight: bold;
 } 
 
-
-* {
-    margin: 0;
-    padding: 0;
-  }
   .wrapper {
     height: 100%;
     width: 100%;
@@ -318,3 +327,28 @@ body{
     padding-bottom: 25%;
    }
   
+ 
+.about-down{
+  background: #12192c;
+  /* height: 100vh; */
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  text-align: center;
+  color:#fff
+}
+
+.about-down h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.about-down h1 span{
+  color: #21b9ff;
+}
+
+.about-down h2{
+  font-weight: 600;
+}
+
