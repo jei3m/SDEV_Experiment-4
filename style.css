@@ -11,12 +11,15 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Responsible for the very top slide */
 .about-wrapper{
     height: 100vh;
+    width: 100%;
 }
 
+/* Responsible for the very top slide, left information */
 .about-left{
-    background-color: #21D4FD;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +35,7 @@ body{
     border-radius: 12px 12px 0 0;
 }
 
+/* Responsible for the images */
 .about-img img{
     display: block;
     width: 200px;
@@ -45,6 +49,7 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+/* Responsible for the card of the left */
 .shadow{
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +58,7 @@ body{
     height: 200px;
 }
 
+/* Responsible for the content of the left (top part) */
 .about-left-content h2{
     font-size: 2rem;
     margin: 2.2rem 0 0.6rem 0;
@@ -61,6 +67,7 @@ body{
     border-bottom: 2px solid #21b9ff;
 }
 
+/* Responsible for the card of the left (top part) */
 .about-left-content h3{
     text-transform: uppercase;
     font-weight: 400;
@@ -68,14 +75,24 @@ body{
     margin-top: 1.4rem;
 }
 
+.bottom{
+  background: #12192c;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Responsible for the icons, background */
 .icons{
-    background: #12192c;
+    
     display: flex;
     justify-content: center;
     padding: 0.8rem 0;
     border-radius: 0 0 12px 12px;
 }
 
+/* Responsible for the icons button */
 .icons li{
     list-style-type: none;
     background: #21b9ff;
@@ -92,11 +109,13 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+/* Responsible for the icons hover animation */
 .icons li:hover{
     background: #edffec;
     color: #000;
 }
 
+/* Responsible for the information at the right side (top part) */
 .about-right{
     background: #12192c;
     height: 100vh;
@@ -121,6 +140,11 @@ body{
     font-weight: 600;
 }
 
+.about-right h2 span{
+  color: #21b9ff;
+}
+
+/* Responsible for the buttons */
 .about-btns{
     display: flex;
     margin: 2rem 0;
@@ -141,14 +165,14 @@ body{
     color:#fff
 }
 
-.btn.btn-pink{
+.btn.btn-blue{
     background: #16b7db;
     color: #fff;
     border-color: #21D4FD;
     transition: all 0.5s ease-in-out;
 }
 
-.btn.btn-pink:hover{
+.btn.btn-blue:hover{
     background: transparent;
     border-color: #fff;
     color: #fff;
@@ -158,6 +182,7 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
+/* Responsible for the paragraph */
 .about-para p{
     font-weight: 400;
     padding: 0.5rem;
@@ -180,21 +205,13 @@ body{
     
     }
 }
-.credit{
-    text-align: center;
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.credit a{
-    text-decoration: none;
-    color:#B721FF;
-    font-weight: bold;
-} 
 
+ /* Responsible for the Bubbles */
   .wrapper {
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+    display: flex;
+    flex-direction: column;
     position: absolute;
   }
   .wrapper h1 {
@@ -272,7 +289,7 @@ body{
   .wrapper div:nth-child(9) {
     top: 50%;
     left: 50%;
-    animation: animate 6s linear infinite;
+    animation: animate 10s linear infinite;
   }
   .wrapper div:nth-child(10) {
     top: 45%;
@@ -312,7 +329,8 @@ body{
       transform: scale(1.3) translateY(-100px) rotate(360deg);
     }
   }
-  
+
+/* Responsible for the scroll animation */  
   html {
     scroll-behavior: smooth;
    }
@@ -327,11 +345,9 @@ body{
     padding-bottom: 25%;
    }
   
- 
+ /* Responsible for the last slide below */
 .about-down{
   background: #12192c;
-  /* height: 100vh; */
-  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -341,7 +357,7 @@ body{
 }
 
 .about-down h1{
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 .about-down h1 span{
@@ -350,5 +366,141 @@ body{
 
 .about-down h2{
   font-weight: 600;
+  font-size: 1.5rem;
+}
+
+
+
+:root {
+  --scale: 0.1;
+  --space: 8vmin;
+  --font-primary: 'Lato', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    --scale: 0;
+  }
+}
+
+
+ /* Responsible for the Parallax Effect */
+.body-p {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(5, 15%, 5%);
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: hsl(65, 80%, 60%);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.header,
+.footer {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.section {
+  transform-origin: center top;
+  transform: scaleY(calc(1 - var(--scale)));
+}
+
+.section > * {
+  transform-origin: center top;
+  transform: scaleY(calc(1 / (1 - var(--scale))));
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: bold;
+  line-height: 1.125;
+}
+
+.byline {
+  display: block;
+  font-size: 0.6em;
+  margin: calc(var(--space) / 1.35) 0;
+}
+
+.content {
+  position: relative;
+  margin: -50vh auto 0;
+  padding: var(--space);
+  max-width: 100ch;
+  width: calc(100% - var(--space));
+  background: hsla(5, 15%, 5%, 0.9);
+}
+
+.content span{
+  color: #21b9ff;
+}
+
+.content > * + * {
+  margin-top: 2rem;
+}
+
+.image-container {
+  position: sticky;
+  top: 0;
+  width: 1080;
+  height: 100vh;
+  z-index: -2;
+}
+
+.image-container img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(5, 15%, 5%, 0) 0%,
+    hsla(5, 15%, 5%, 0.013) 8.1%,
+    hsla(5, 15%, 5%, 0.049) 15.5%,
+    hsla(5, 15%, 5%, 0.104) 22.5%,
+    hsla(5, 15%, 5%, 0.175) 29%,
+    hsla(5, 15%, 5%, 0.259) 35.3%,
+    hsla(5, 15%, 5%, 0.352) 41.2%,
+    hsla(5, 15%, 5%, 0.45) 47.1%,
+    hsla(5, 15%, 5%, 0.55) 52.9%,
+    hsla(5, 15%, 5%, 0.648) 58.8%,
+    hsla(5, 15%, 5%, 0.741) 64.7%,
+    hsla(5, 15%, 5%, 0.825) 71%,
+    hsla(5, 15%, 5%, 0.896) 77.5%,
+    hsla(5, 15%, 5%, 0.951) 84.5%,
+    hsla(5, 15%, 5%, 0.987) 91.9%,
+    hsl(5, 15%, 5%) 100%
+  );
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
